@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container bg-white rounded-4">
+            <div class="header-content d-flex flex-wrap justify-content-between align-items-lg-center">
+                <div class="logo order-1 order-lg-1">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="list order-3 order-lg-2" id="menu-list">
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Set menu</a></li>
+                        <li><a href="#">Contact</a></li>                         
+                    </ul>
+                </div>
+                <div class="action order-2 order-lg-3 d-flex align-items-center">
+                    <div class="cart position-relative" data-bs-toggle="modal" data-bs-target="#foodModal">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="d-flex justify-content-center align-items-center rounded-circle position-absolute text-white ">10</span>
+                    </div>
+                    <div class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+
+    <!-- Banner Start -->
+     <section class="banner position-relative" style="background-image: url(assets/images/banner-bg.png);">
+        <div class="container">
+            <div class="col-lg-6 m-auto">
+                <div class="banner-text text-end">
+                    <h1 class="text-white">RESTAN</h1>
+                    <p class="text-uppercase text-white d-inline-flex justify-content-center align-items-center">Restaurant</p>
+                    <span class="d-block text-white position-relative">Book your table now</span>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Banner End -->
+
+
+    <!-- About Start -->
+     <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-sec position-relative text-center">
+                        <img src="assets/images/about.png" alt="img">
+                        <img src="assets/images/behind-about-image.png" class="behind-image" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mt-4 mt-lg-0">
+                        <div class="section-title">
+                            <h2>Best food ideas & <br> traditions in the world</h2>
+                        </div>
+
+                        <div class="about-details">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="details">
+                                        <p>Codulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now. </p>
+                                        <a class="d-inline-flex justify-content-center align-items-center text-white text-uppercase text-decoration-none" href="#">explore Menu</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="food-table mt-4 mt-lg-0 position-relative">
+                                        <ul class="m-0 list-unstyled text-white">
+                                            <li>
+                                                <h4 class="text-white">Breakfast</h4>
+                                                <p>Reservations for every day from 07am to 11.30am</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-white">Breakfast</h4>
+                                                <p>Reservations for every day from 07am to 11.30am</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-white">Breakfast</h4>
+                                                <p>Reservations for every day from 07am to 11.30am</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About End -->
+
+    <!-- Special Menu Start -->
+     <section class="special-menu section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Our Specials Menu</h2>
+            </div>
+            <div class="menu-list d-flex justify-content-center mb-4">
+                <ul id="category_list" class="list-unstyled d-flex flex-wrap justify-content-center">
+                  <!-- keep this empty -->
+                </ul>
+            </div>
+            <div class="row" id="food_gallery">
+                <!-- keep this empty -->
+            </div>
+        </div>
+     </section>
+    <!-- Special Menu End -->
+
+    <!-- Reservation Start -->
+     <section class="reservation section-margin" style="background-image: url(assets/images/reserve-bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-area">
+                        <div class="section-title">
+                            <h2 class="text-white">Reservation Your Favorite Private Table</h2>
+                        </div>
+                        <p class="des">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
+                        <ul class="d-flex list-unstyled flex-wrap pt-3">
+                            <li class="mb-3 mb-lg-0">
+                                <h5 class="text-white">Breakfast Menu</h5>
+                                <span>125+ items</span>
+                            </li>
+                            <li class="mb-3 mb-lg-0">
+                                <h5 class="text-white">Lunch Menu</h5>
+                                <span>125+ items</span>
+                            </li>
+                            <li class="mb-3 mb-lg-0">
+                                <h5 class="text-white">Dinner Menu</h5>
+                                <span>125+ items</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form bg-white">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                            </div>
+
+                            <select class="form-select mb-3">
+                                <option selected>1 Person</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                </span>
+                            </div>
+
+                            <select class="form-select mb-3">
+                                <option selected>10:00 AM</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <button class="border-0 text-white text-uppercase" type="submit">Book a table</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Reservation End -->
+
+    <!-- Food Gallery start -->
+     <div class="food-gallery section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Our Food Gallery</h2>
+            </div>
+
+            <div class="gallery-container d-grid">
+                <div class="gallery-item position-relative">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-1.png" alt="img">
+                    <div class="overlay w-100 h-100 position-absolute">
+                        <div class="overlay-content position-absolute">
+                            <h5 class="text-white">Minion Drinks</h5>
+                            <span>Cold Lemon Juice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item position-relative">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-2.png" alt="img">
+                    <div class="overlay w-100 h-100 position-absolute">
+                        <div class="overlay-content position-absolute">
+                            <h5 class="text-white">Minion Drinks</h5>
+                            <span>Cold Lemon Juice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item position-relative">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-2.png" alt="img">
+                    <div class="overlay w-100 h-100 position-absolute">
+                        <div class="overlay-content position-absolute">
+                            <h5 class="text-white">Minion Drinks</h5>
+                            <span>Cold Lemon Juice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item position-relative">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-2.png" alt="img">
+                    <div class="overlay w-100 h-100 position-absolute">
+                        <div class="overlay-content position-absolute">
+                            <h5 class="text-white">Minion Drinks</h5>
+                            <span>Cold Lemon Juice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item position-relative">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/gallery-2.png" alt="img">
+                    <div class="overlay w-100 h-100 position-absolute">
+                        <div class="overlay-content position-absolute">
+                            <h5 class="text-white">Minion Drinks</h5>
+                            <span>Cold Lemon Juice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Food Gallery end -->
+
+    <!-- Footer Start -->
+    <footer class="footer section-margin">
+        <div class="container">
+            <div class="footer-logo position-relative text-center z-3">
+                <a class="d-inline-block" href="#">
+                    <img src="assets/images/footer-logo.png" alt="footer logo">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-about">
+                        <h3 class="footer-title text-white">About</h3>
+                        <p>Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction neglected.</p>
+                        <ul class="footer-social list-unstyled d-flex">
+                            <li><a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="d-inline-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="explore">
+                        <h3 class="footer-title text-white">Explore</h3>
+
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none" href="#">Home</a></li>
+                            <li><a class="text-decoration-none" href="#">About</a></li>
+                            <li><a class="text-decoration-none" href="#">Contact</a></li>
+                            <li><a class="text-decoration-none" href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact-info">
+                        <h3 class="footer-title text-white">Contact Info</h3>
+
+                        <ul class="contact-info-list list-unstyled">
+                            <li class="position-relative">
+                                <i class="fa-solid fa-location-arrow"></i>
+                                <span>Dogair Bazar, Signboard, demra, Dhaka - 1206</span>
+                            </li>
+                            <li class="position-relative">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+8801728619733">+880 1728 619733</a>
+                                <a href="tel:+8801728000000">+880 1728 000000</a>
+                            </li>
+
+                            <li class="position-relative">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <a href="mailto:nasrullah.cit.bd@gmail.com">nasrullah.cit.bd@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="subscription mt-5 mt-lg-0">
+                        <h3 class="footer-title text-white">Subscription</h3>
+                        <p>Join our subscribers list to get the latest news and special offers.</p>
+                        <form>
+                            <input class="d-block w-100 text-white" type="email" placeholder="Your email">
+                            <button class="text-white text-uppercase border-0 mt-2" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="mb-0 text-center text-white-50">&copy; Copyright 2024 Restan. All Rights Reserved by Restan.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Cart Modal -->
+<div class="modal food-cart-modal fade" id="foodModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="text-center pt-2 pb-4">Your Cart Items</h2>
+          <div class="table-responsive">
+              <table class="table table-striped table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity </th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <img src="assets/images/food-1.png" alt="img">
+                    </td>
+                    <td>
+                        <span class="title">Braised Chicken Legs</span>
+                    </td>
+                    <td>
+                        <span class="price">$12.00</span>
+                    </td>
+                    <td>
+                        <div class="quantity-area d-flex align-items-center">
+                            <span class="quantity d-block mr-2">1</span>
+                            <div class="plus-minus">
+                                <ul class="d-flex list-unstyled m-0">
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i></li>
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total">$12.00</span>
+                    </td>
+                    <td>
+                        <span class="action">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="assets/images/food-1.png" alt="img">
+                    </td>
+                    <td>
+                        <span class="title">Braised Chicken Legs</span>
+                    </td>
+                    <td>
+                        <span class="price">$12.00</span>
+                    </td>
+                    <td>
+                        <div class="quantity-area d-flex align-items-center">
+                            <span class="quantity d-block mr-2">1</span>
+                            <div class="plus-minus">
+                                <ul class="d-flex list-unstyled m-0">
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i></li>
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total">$12.00</span>
+                    </td>
+                    <td>
+                        <span class="action">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="assets/images/food-1.png" alt="img">
+                    </td>
+                    <td>
+                        <span class="title">Braised Chicken Legs</span>
+                    </td>
+                    <td>
+                        <span class="price">$12.00</span>
+                    </td>
+                    <td>
+                        <div class="quantity-area d-flex align-items-center">
+                            <span class="quantity d-block mr-2">1</span>
+                            <div class="plus-minus">
+                                <ul class="d-flex list-unstyled m-0">
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i></li>
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total">$12.00</span>
+                    </td>
+                    <td>
+                        <span class="action">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="assets/images/food-1.png" alt="img">
+                    </td>
+                    <td>
+                        <span class="title">Braised Chicken Legs</span>
+                    </td>
+                    <td>
+                        <span class="price">$12.00</span>
+                    </td>
+                    <td>
+                        <div class="quantity-area d-flex align-items-center">
+                            <span class="quantity d-block mr-2">1</span>
+                            <div class="plus-minus">
+                                <ul class="d-flex list-unstyled m-0">
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i></li>
+                                    <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total">$12.00</span>
+                    </td>
+                    <td>
+                        <span class="action">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+          </div>
+          <div class="total-count">
+            <strong class="h2 d-block text-end text-dark">Total Amount: $27.00</strong>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn text-white btn-custom">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Script -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
